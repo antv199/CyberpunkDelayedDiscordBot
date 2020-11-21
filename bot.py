@@ -22,7 +22,7 @@ def getStatus():
             chrome_options.add_argument('--no-sandbox')
             chrome_options.binary_location = GOOGLE_CHROME_PATH
 
-            driver=webdriver.Chrome(execution_path=DRIVER_PATH, chrome_options=chrome_options)
+            driver=webdriver.Chrome(executable_path=DRIVER_PATH, options=chrome_options)
 
         driver.get("https://hascyberpunkbeendelayedagain.com")
 
