@@ -8,21 +8,14 @@ client=discord.Client()
 
 Status=["d","d",0] #1. Text Status 2.URL, if one exists 3.Last time it got refreshed, in Unix Time
 test=os.environ.get("Test")
+#test=true
 
 def getStatus():
     if Status[2]==0 or Status[2]+60<=int(time.time()):
         if test:
             driver=webdriver.Edge()
         else:
-            GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
-            DRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
-
-            chrome_options = webdriver.ChromeOptions()
-            chrome_options.add_argument('--disable-gpu')
-            chrome_options.add_argument('--no-sandbox')
-            chrome_options.binary_location = GOOGLE_CHROME_PATH
-
-            driver=webdriver.Chrome(executable_path=DRIVER_PATH, options=chrome_options)
+            driver=webdriver.Chrome()
 
         driver.get("https://hascyberpunkbeendelayedagain.com")
 
