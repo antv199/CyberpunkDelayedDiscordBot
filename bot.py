@@ -15,7 +15,7 @@ def getStatus():
         if test:
             driver=webdriver.Edge()
         else:
-            driver=webdriver.Chrome()
+            driver=webdriver.Chrome(executable_path="/app/.apt/usr/bin/google-chrome")
 
         driver.get("https://hascyberpunkbeendelayedagain.com")
 
