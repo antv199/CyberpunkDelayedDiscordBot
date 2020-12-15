@@ -8,4 +8,4 @@ Just type ***".cp"*** in the chat and it's going to scrap for new info. There's 
 
 **Notice 2: This is not "production ready". If the bot breaks, that probably means that either the website layout has changed or something else happened.**
 
-[Invite it if you want. I'm not responsible for anything you do with it. You have been warned.](https://discord.com/oauth2/authorize?client_id=779765488695246880&scope=bot&permissions=3072)
+Since, you know, the game is now out, the bot is deleted and the repository is now archived.
